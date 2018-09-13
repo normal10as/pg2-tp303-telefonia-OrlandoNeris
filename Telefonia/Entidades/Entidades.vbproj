@@ -63,7 +63,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.vb" />
     <Compile Include="Equipo.vb" />
+    <Compile Include="Linea.vb" />
     <Compile Include="Marca.vb" />
     <Compile Include="Modelo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

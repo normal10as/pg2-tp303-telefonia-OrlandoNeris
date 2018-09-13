@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AD82D744-1732-42BE-8176-1B3315EE4D79}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Test.Modelo_Test</StartupObject>
+    <StartupObject>Test.Linea_Test</StartupObject>
     <RootNamespace>Test</RootNamespace>
     <AssemblyName>Test</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Equipo_test.vb" />
+    <Compile Include="Linea_Test.vb" />
     <Compile Include="Marca Test.vb" />
     <Compile Include="Modelo Test.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
