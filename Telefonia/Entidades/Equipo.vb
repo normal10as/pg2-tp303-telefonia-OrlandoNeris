@@ -4,7 +4,7 @@ Imports Entidades
 Public Class Equipo
 
     Private _serie As String
-    Public Property Modelo As String
+    Public Property Serie As String
         Get
             Return _serie
         End Get
@@ -26,7 +26,12 @@ Public Class Equipo
 
     End Sub
 
+    Public Sub Vender(fecha As Date)
+        _fechaVenta = fecha
+    End Sub
 
-
+    Public Overrides Function ToString() As String
+        Return Me.Serie
+    End Function
 
 End Class

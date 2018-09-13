@@ -68,6 +68,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Equipo_test.vb" />
     <Compile Include="Marca Test.vb" />
     <Compile Include="Modelo Test.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
