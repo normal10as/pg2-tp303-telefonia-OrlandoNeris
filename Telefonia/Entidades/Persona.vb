@@ -40,7 +40,7 @@ Public Class Persona
     Sub New(apellido As String, nombre As String, documento As UInteger)
         Me.Nombre = nombre
         Me.Apellido = apellido
-        Me.Documento = 
+        Me.Documento = "dd"
     End Sub
 
 End Class
