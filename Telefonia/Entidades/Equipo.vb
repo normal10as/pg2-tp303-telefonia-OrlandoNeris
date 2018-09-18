@@ -3,18 +3,8 @@ Imports Entidades
 
 Public Class Equipo
 
-    Private _marcaequipo As Marca
-    Public Property marcaEquipo As Marca
-        Get
-            Return _marcaequipo
-        End Get
-        Set(value As Marca)
-            _marcaequipo = value
-        End Set
-    End Property
-
     Private _modeloequipo As Modelo
-    Public Property modeloEquipo As Modelo
+    Public Property ModeloEquipo As Modelo
         Get
             Return _modeloequipo
         End Get
@@ -42,10 +32,9 @@ Public Class Equipo
         End Get
     End Property
 
-    Sub New(marca As Marca, modelo As Modelo, serie As String)
+    Sub New(modelo As Modelo, serie As String)
         Me.Serie = serie
-        Me.marcaEquipo = marca
-        Me.modeloEquipo = modelo
+        Me.ModeloEquipo = modelo
     End Sub
 
     Public Sub Vender(fecha As Date)

@@ -1,5 +1,15 @@
 ﻿Public Class Linea
 
+    Private _equipo As Equipo
+    Public Property Equipo As Equipo
+        Get
+            Return _equipo
+        End Get
+        Set(value As Equipo)
+            _equipo = value
+        End Set
+    End Property
+
     Private _codigoArea As UShort
     Public Property CodigoArea As UShort
         Get
@@ -27,10 +37,11 @@
         End Get
     End Property
 
-    Sub New(codigoarea As UShort, numero As UInteger)
-        Me.CodigoArea = codigoarea
-        Me.Numero = numero
-        Me._estado = True
+    Sub New(codigoarea As UShort, numero As UInteger, equipo As Equipo)
+        codigoarea = codigoarea
+        numero = numero
+        _estado = True
+        equipo = equipo
     End Sub
 
     Public Sub Suspender()
