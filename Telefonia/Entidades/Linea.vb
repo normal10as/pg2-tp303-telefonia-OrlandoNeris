@@ -38,10 +38,10 @@
     End Property
 
     Sub New(codigoarea As UShort, numero As UInteger, equipo As Equipo)
-        codigoarea = codigoarea
-        numero = numero
+        Me.CodigoArea = codigoarea
+        Me.Numero = numero
         _estado = True
-        equipo = equipo
+        Me.Equipo = equipo
     End Sub
 
     Public Sub Suspender()

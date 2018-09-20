@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.vb" />
+    <Compile Include="Empresa.vb" />
     <Compile Include="Equipo.vb" />
     <Compile Include="Linea.vb" />
     <Compile Include="Marca.vb" />
@@ -84,6 +85,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persona.vb" />
+    <Compile Include="Plan.vb" />
+    <Compile Include="Voz.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

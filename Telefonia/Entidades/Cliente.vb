@@ -10,9 +10,8 @@
         End Set
     End Property
 
-    Sub New()
-
+    Sub New(cuenta As UInteger)
+        Me.Cuenta = cuenta
     End Sub
-
 
 End Class

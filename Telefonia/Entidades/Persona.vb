@@ -37,10 +37,15 @@ Public Class Persona
         End Set
     End Property
 
-    Sub New(apellido As String, nombre As String, documento As UInteger)
+    Sub New(cuenta As UInteger, apellido As String, nombre As String, documento As UInteger)
+        MyBase.New(cuenta)
         Me.Nombre = nombre
         Me.Apellido = apellido
-        Me.Documento = "dd"
+        Me.Documento = documento
     End Sub
+
+    Public Overrides Function ToString() As String
+        Return Me.Nombre
+    End Function
 
 End Class

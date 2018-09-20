@@ -3,13 +3,13 @@ Imports Entidades
 
 Public Class Equipo
 
-    Private _modeloequipo As Modelo
-    Public Property ModeloEquipo As Modelo
+    Private _modelo As Modelo
+    Public Property Modelo As Modelo
         Get
-            Return _modeloequipo
+            Return _modelo
         End Get
         Set(value As Modelo)
-            _modeloequipo = value
+            _modelo = value
         End Set
     End Property
 
@@ -34,7 +34,7 @@ Public Class Equipo
 
     Sub New(modelo As Modelo, serie As String)
         Me.Serie = serie
-        Me.ModeloEquipo = modelo
+        Me.Modelo = modelo
     End Sub
 
     Public Sub Vender(fecha As Date)
