@@ -20,13 +20,18 @@
         End Set
     End Property
 
-    Public Sub NuevoConsumo(valor As UInteger)
-        If valor - _credito Then
+    Friend Consumo As Decimal
+
+    Public Overridable Sub NuevoConsumo(Valor As UInteger)
+        If getDisponible() >= Valor Then
+            Consumo += Valor
+        End If
 
     End Sub
 
     Public Function getDisponible() As UInteger
-        Return 0
+        Return Credito
     End Function
+
 
 End Class

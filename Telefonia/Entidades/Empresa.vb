@@ -32,7 +32,8 @@
     End Sub
 
     Public Overrides Function ToString() As String
-        Return Me.RazonSocial
+        Return "Razon Social: " & RazonSocial & "   Cuenta: " & Cuenta
+
     End Function
 
 End Class

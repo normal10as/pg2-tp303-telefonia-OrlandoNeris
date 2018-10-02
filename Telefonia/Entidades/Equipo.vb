@@ -26,6 +26,7 @@ Public Class Equipo
     End Property
 
     Private _fechaVenta As Date
+
     Public ReadOnly Property FechaVenta As Date
         Get
             Return _fechaVenta

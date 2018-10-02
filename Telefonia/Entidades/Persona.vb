@@ -42,6 +42,7 @@ Public Class Persona
         Me.Nombre = nombre
         Me.Apellido = apellido
         Me.Documento = documento
+
     End Sub
 
     Public Overrides Function ToString() As String
